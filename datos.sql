@@ -28,14 +28,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `datos` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `medicacion` varchar(100) NOT NULL,
   `primera` int(10) NOT NULL,
   `desayuno` int(10) NOT NULL,
   `almuerzo` int(10) NOT NULL,
   `penultima` int(10) NOT NULL,
   `cena` int(10) NOT NULL,
-  `descripcion` varchar(100) NOT NULL,
-  `foto` mediumblob NOT NULL
+  `descripcion` varchar(255) NOT NULL,
+  `foto` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 --

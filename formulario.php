@@ -10,17 +10,20 @@
 <body>
 
 	<form action="visor.php" enctype="multipart/form-data" method="post">
-		<p>Medicaci&oacute;n: <input type="text" name="medicacion" /></p>
-		<p>07:00: <input type="text" name="primera" /></p>
-		<p>Desayuno: <input type="text" name="desayuno" /></p>
-		<p>Almuerzo: <input type="text" name="almuerzo" /></p>
-		<p>19:00: <input type="text" name="penultima" /></p>
-		<p>Cena: <input type="text" name="cena" /></p>
-		<p>Descripci&oacute;n: <input type="text" name="descripcion" /></p>
-		<p>Foto: <input type="file" name="foto" /></p>
+		<p>Medicaci&oacute;n: <input type="text" name="medicacion" required /></p>
+		<p>07:00: <input type="text" name="primera" required/></p>
+		<p>Desayuno: <input type="text" name="desayuno" required/></p>
+		<p>Almuerzo: <input type="text" name="almuerzo" required/></p>
+		<p>19:00: <input type="text" name="penultima" required/></p>
+		<p>Cena: <input type="text" name="cena" required/></p>
+		<p>Descripci&oacute;n: <input type="text" name="descripcion" required/></p>
+		<p>Foto: <input type="file" name="foto" required/></p>
 		<p><input type="submit" value="Enviar" name="submit"/></p>
 	</form>
 
+	<a href="visor.php">
+    <button>Volver al visor</button>
+</a>
 </body>
 
 </html>
