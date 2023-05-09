@@ -9,7 +9,7 @@
 
 <body>
 
-	<form action="visor.php" method="post">
+	<form action="visor.php" enctype="multipart/form-data" method="post">
 		<p>Medicaci&oacute;n: <input type="text" name="medicacion" /></p>
 		<p>07:00: <input type="text" name="primera" /></p>
 		<p>Desayuno: <input type="text" name="desayuno" /></p>
@@ -18,7 +18,7 @@
 		<p>Cena: <input type="text" name="cena" /></p>
 		<p>Descripci&oacute;n: <input type="text" name="descripcion" /></p>
 		<p>Foto: <input type="file" name="foto" /></p>
-		<p><input type="submit" value="Enviar" /></p>
+		<p><input type="submit" value="Enviar" name="submit"/></p>
 	</form>
 
 </body>
